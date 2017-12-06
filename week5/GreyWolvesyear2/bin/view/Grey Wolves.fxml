@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="837.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="about" mnemonicParsing="false" text="About" />
+        </menus>
+      </MenuBar>
+      <Button fx:id="prediction" layoutX="38.0" layoutY="488.0" mnemonicParsing="false" text="Prediction" />
+      <Button fx:id="newPrediction" layoutX="151.0" layoutY="488.0" mnemonicParsing="false" text="New prediction" />
+      <TextField fx:id="wolves" layoutX="38.0" layoutY="94.0" />
+      <Text layoutX="38.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter wolves:" />
+      <Text layoutX="38.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter cows:" />
+      <TextField fx:id="cows" layoutX="38.0" layoutY="158.0" />
+      <Text layoutX="38.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter horses:" />
+      <TextField fx:id="horses" layoutX="38.0" layoutY="217.0" />
+      <Text layoutX="38.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter deers:" />
+      <TextField fx:id="deers" layoutX="38.0" layoutY="283.0" />
+      <Text layoutX="38.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter years to predict:" />
+      <TextField fx:id="years" layoutX="38.0" layoutY="348.0" />
+      <LineChart fx:id="graph" layoutX="261.0" layoutY="83.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
